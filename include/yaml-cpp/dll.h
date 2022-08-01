@@ -11,6 +11,8 @@
 #  define YAML_CPP_API
 #  define YAML_CPP_NO_EXPORT
 #else
+
+
 #  if defined(_MSC_VER) || defined(__MINGW32__) || defined(__MINGW64__)
 #    ifndef YAML_CPP_API
 #      ifdef yaml_cpp_EXPORTS
@@ -42,6 +44,8 @@
 #  endif /* _MSC_VER */
 #endif   /* YAML_CPP_STATIC_DEFINE */
 
+#define YAML_CPP_API
+#define YAML_CPP_NO_EXPORT
 #ifndef YAML_CPP_DEPRECATED
 #  ifdef _MSC_VER
 #    define YAML_CPP_DEPRECATED __declspec(deprecated)
