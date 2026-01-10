@@ -417,7 +417,7 @@ and publicly destructible (i.e. anything that can be used as a function return
 type). For mock functions with a return type of `T`, this default value is
 returned from function calls that do not specify an action.
 
-Provides the static methods `Set()`, `SetFactory()`, and `Clear()` to manage the
+Provides the static methods `Set()`, `SetFactory()`, and `clear()` to manage the
 default value:
 
 ```cpp
@@ -429,7 +429,7 @@ T MakeT();
 DefaultValue<T>::SetFactory(&MakeT);
 
 // Unsets the default value.
-DefaultValue<T>::Clear();
+DefaultValue<T>::clear();
 ```
 
 ### NiceMock {#NiceMock}

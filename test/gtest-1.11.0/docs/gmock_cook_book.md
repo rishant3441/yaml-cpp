@@ -2122,12 +2122,12 @@ class MockFoo : public Foo {
   foo.CalculateBar();  // This should return default_bar.
 
   // Unsets the default return value.
-  DefaultValue<Bar>::Clear();
+  DefaultValue<Bar>::clear();
 ```
 
 Please note that changing the default value for a type can make your tests hard
 to understand. We recommend you to use this feature judiciously. For example,
-you may want to make sure the `Set()` and `Clear()` calls are right next to the
+you may want to make sure the `Set()` and `clear()` calls are right next to the
 code that uses your mock.
 
 ### Setting the Default Actions for a Mock Method

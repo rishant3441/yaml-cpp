@@ -154,7 +154,7 @@ To customize the default action for functions with return type `T`, use
 
   // Resets the default action for return type std::unique_ptr<Buzz>,
   // to avoid interfere with other tests.
-  DefaultValue<std::unique_ptr<Buzz>>::Clear();
+  DefaultValue<std::unique_ptr<Buzz>>::clear();
 ```
 
 To customize the default action for a particular method of a specific mock
